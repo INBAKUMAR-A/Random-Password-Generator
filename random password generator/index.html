@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title> Random Password Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="wrapper">
+      <header>
+        <h1> Random Password Generator</h1>
+      </header>
+
+        <div class="card">
+            <div class="card-header">
+            <h2>Generate a Password</h2>
+            </div>
+        <div class="card-body">
+            <textarea
+                readonly
+                id="password"
+                placeholder="Your Secure Password"
+                aria-label="Generated Password">
+            </textarea>
+        </div>
+        <div class="card-footer">
+            <div>Choose how many characters your password should have using the slider!</div>
+                <input type="range" min="0" max="50" name="slide" id="slide"><div id="length"></div>
+                <br>
+                <button onclick="randomPassword()" id="generate" class="btn">Generate Password</button>
+                <button onclick="copyPassword()" class="btn">Copy to Clipboard</button>
+        <div id="length"></div>
+            <ul>
+                <li>A longer password is much better and harder to guess.</li>
+                <li>Your password will contain a mix of letters, numbers, and special characters to make it a stronger password.</li>
+            </ul>
+        <div>
+            <h4>Created By: <a href="https://inbakumar-a.github.io/Portfolio/" alt="GitHub link"> Inbakumar -Dev</a></h4>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
